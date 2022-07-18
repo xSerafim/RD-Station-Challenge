@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Header */
 header nav {
   position: absolute;
@@ -35,7 +39,7 @@ header ul button {
   background-color: transparent;
   height: 30px;
   width: 94px;
-  font-family: 'Nunito Sans';
+  font-family: Nunito Sans;
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
@@ -66,4 +70,71 @@ header ul li div:nth-child(2) button {
   width: 110px;
   background-color: black;
   transform: perspective(10px) rotateX(-20deg);
+}
+
+/* Main Hero */
+
+.main-hero {
+  width: 100vw;
+  height: 80vh;
+  background: #F1F3F5;
+  background:
+    linear-gradient(-155deg , #FFFFFF 400px, #F1F3F5 0) top right;
+}
+
+.hero-text {
+  margin-left: 6vw;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-family: Darker Grotesque;
+  font-size: 56px;
+  margin-bottom: 15px;
+  line-height: 100%;
+  font-weight: 900;
+}
+
+.hero-paragraph {
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+
+/* Together information */
+
+.together-info {
+  width: 100vw;
+  height: 30vh;
+  background: #F1F3F5;
+  background:
+    linear-gradient(140deg , #F1F3F5 50px, #0B485B 0) top left;
+}
+
+.info-text {
+  margin-left: 6vw;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.info-title {
+  font-family: Darker Grotesque;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.info-paragraph {
+  font-family: Nunito Sans;
+  font-size: 16px;
 }
