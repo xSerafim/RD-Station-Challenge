@@ -1,0 +1,69 @@
+/* Header */
+header nav {
+  position: absolute;
+  width: 100vw;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  display: flex;
+}
+
+/* Header Buttons */
+
+header ul button {
+  border: 2px solid black;
+  background-color: transparent;
+  height: 30px;
+  width: 94px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.shadow-border {
+  height: 4px;
+  margin-left: 3.1px;
+  width: 88px;
+  background-color: black;
+  transform: perspective(10px) rotateX(-20deg);
+}
+
+header ul li div:nth-child(2) button {
+  dislpay: flex;
+  background-color: #19C1CE;
+  width: 120px;
+  border: none;
+}
+
+.shadow-outline {
+  height: 4px;
+  margin-left: 4px;
+  width: 110px;
+  background-color: black;
+  transform: perspective(10px) rotateX(-20deg);
+}
