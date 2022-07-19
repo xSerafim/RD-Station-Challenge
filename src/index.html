@@ -11,11 +11,11 @@
 <body>
   <header>
     <nav>
-      <div style="margin-left: 4vw; width: 20%;">
+      <div style="margin-left: 6vw; width: 20%;">
         <img src="./images/logo.svg" alt="Logo RD Station" />
       </div>
       <div style="width: 80%;">
-        <ul>
+        <ul class="nav-links">
           <li>Menu 1</li>
           <li>Menu 2</li>
           <li>Menu 3</li>
@@ -60,6 +60,76 @@
         </p>
       </div>
     </section>
+    <form class="signup-form">
+      <p class="header-form">Comece seus 10 dias de teste grátis do RD Station Marketing!</p>
+      <br />
+      <span class="tip-form">Não precisa cadastrar cartão de crédito. 😉</span>
+      <br />
+      <hr style="background-color: #CFD3D8" />
+      <br />
+      <label class="label-input">
+        Diga, qual seu nome?
+        <input class="form-control" type="text" placeholder="Insira seu nome" />
+      </label>
+      <label class="label-input">
+        Seu email de trabalho
+        <input class="form-control" type="email" placeholder="Insira seu e-mail" />
+      </label>
+      <label class="label-input">
+        Seu telefone
+        <input class="form-control" type="number" placeholder="Insira seu número de telefone com DDD" />
+      </label>
+      <label class="label-input">
+        Seu cargo de ocupação
+        <select class="form-control">
+          <option hidden>Selecione seu cargo</option>
+          <option>Sócio(a) / CEO / Proprietário(a)</option>
+          <option>Diretor(a) de Vendas</option>
+          <option>Diretor(a) de Marketing"</option>
+          <option>Diretor(a) Outras Áreas</option>
+          <option>Gerente de Marketing</option>
+          <option>Gerente de Vendas</option>
+          <option>Coordenador(a)/Supervisor(a) de Marketing</option>
+          <option>Coordenador(a)/Supervisor(a) de Vendas</option>
+          <option>Analista/Assistente de Marketing</option>
+          <option>Analista/Assistente de Vendas</option>
+          <option>Vendedor(a) / Executivo(a) de Contas</option>
+          <option>Estudante</option>
+          <option>Outros Cargos</option>
+        </select>
+      </label>
+      <label class="label-input">
+        Crie uma senha
+        <input class="form-control" type="password" />
+      </label>
+      <label class="label-input">
+        Confirme sua senha
+        <input class="form-control" type="password" />
+      </label>
+      <span class="label-input">Qual o site da sua empresa?</span>
+      <label class="radio-input">
+        <input type="radio" checked="checked" name="site">
+        Meu site é
+      </label>
+      <input
+        class="form-control"
+        type="number"
+        placeholder="Insira o endereço do seu site"
+      />
+      <label class="radio-input">
+        <input type="radio" name="site">
+        Ainda não tenho site
+      </label>
+      <ul class="footer-form-text">
+        <li>Ao criar minha conta estou de acordo com os <a href="*">termos de uso</a> do software e <a href="*">política de privacidade</a>.</li>
+        <li>Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.</li>
+        <li>*Você pode alterar suas permissões de comunicação a qualquer tempo.</li>
+      </ul>
+      <div style="margin: 18px 0">
+        <button class="submit-form-btn">CRIAR MINHA CONTA</button>
+        <div class="shadow-submit"></div>
+      </div>
+    </form>
   </main>
 </body>
 </html>
