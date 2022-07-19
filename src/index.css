@@ -21,7 +21,7 @@ header nav {
   line-height: 100%;
 }
 
-header ul {
+.nav-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -77,9 +77,10 @@ header ul li div:nth-child(2) button {
 .main-hero {
   width: 100vw;
   height: 80vh;
-  background: #F1F3F5;
-  background:
-    linear-gradient(-155deg , #FFFFFF 400px, #F1F3F5 0) top right;
+  background-image: url('./images/shape.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-text {
@@ -138,3 +139,115 @@ header ul li div:nth-child(2) button {
   font-family: Nunito Sans;
   font-size: 16px;
 }
+
+/* signup form */
+
+.signup-form {
+  position: absolute;
+  top: 13vh;
+  right: 6vw;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 10px;
+  box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+  border-radius: 2px;
+}
+
+.header-form {
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 110%;
+  text-align: center;
+}
+
+.tip-form {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #7E8A98;
+}
+
+.form-control {
+  padding-left: 8px;
+  border-radius: 0;
+  border: 2px solid black;
+  height: 35px;
+  margin: 10px 0;
+  background-color: #FFFFFF;
+  box-shadow: inset 6px 6px 0px #EEFBFB;
+}
+
+select.form-control {
+  color: #97A1AC;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.radio-input {
+  margin: 10px 0;
+}
+
+.footer-form-text {
+  margin: auto;
+  margin-top: 16px;
+  width: 92%;
+  list-style-type: disc;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #7E8A98;
+}
+
+.submit-form-btn {
+  display: flex;
+  border: none;
+  background-color: #F2BF4E;
+  height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.shadow-submit {
+  height: 5px;
+  background-color: black;
+  margin-left: 1.2vw;
+  width: 92%;
+  transform: perspective(10px) rotateX(-20deg);
+}
+
+.radio-input {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.radio-input input[type="radio"]:checked {
+  accent-color: black;
+}
+
