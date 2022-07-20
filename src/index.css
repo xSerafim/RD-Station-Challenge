@@ -76,7 +76,7 @@ header ul li div:nth-child(2) button {
 
 .main-hero {
   width: 100vw;
-  height: 80vh;
+  height: 650px;
   background-image: url('./images/shape.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ header ul li div:nth-child(2) button {
 
 .together-info {
   width: 100vw;
-  height: 30vh;
+  height: 330px;
   background: #F1F3F5;
   background:
     linear-gradient(140deg , #F1F3F5 50px, #0B485B 0) top left;
@@ -251,3 +251,33 @@ select.form-control {
   accent-color: black;
 }
 
+/* Result sections */
+
+section.results {
+  display: flex;
+  width: 100vw;
+  height: 902px;
+  background:
+    linear-gradient(to right top, #FFFFFF 450px, #F1F3F5 0);
+}
+
+/* .results-info {
+  position: absolute;
+  left: 65vw;
+  width: 350px;
+} */
+
+section.results h3 {
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+}
+
+.girl-with-pen {
+  padding-top: 240px;
+  padding-left: 100px;
+  width: 1065px;
+  height: 600px;
+}

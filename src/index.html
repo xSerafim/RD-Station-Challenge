@@ -60,7 +60,7 @@
         </p>
       </div>
     </section>
-    <form class="signup-form">
+    <form class="signup-form" action="https://app.rdstation.com.br/signup" method="post">
       <p class="header-form">Comece seus 10 dias de teste grátis do RD Station Marketing!</p>
       <br />
       <span class="tip-form">Não precisa cadastrar cartão de crédito. 😉</span>
@@ -69,20 +69,20 @@
       <br />
       <label class="label-input">
         Diga, qual seu nome?
-        <input class="form-control" type="text" placeholder="Insira seu nome" />
+        <input id="user-name" class="form-control" type="text" placeholder="Insira seu nome" />
       </label>
       <label class="label-input">
         Seu email de trabalho
-        <input class="form-control" type="email" placeholder="Insira seu e-mail" />
+        <input id="user-email" class="form-control" type="email" placeholder="Insira seu e-mail" />
       </label>
       <label class="label-input">
         Seu telefone
-        <input class="form-control" type="number" placeholder="Insira seu número de telefone com DDD" />
+        <input id="user-phone" class="form-control" type="tel" placeholder="Insira seu número de telefone com DDD" />
       </label>
       <label class="label-input">
         Seu cargo de ocupação
-        <select class="form-control">
-          <option hidden>Selecione seu cargo</option>
+        <select id="user-role" class="form-control">
+          <option value="" hidden>Selecione seu cargo</option>
           <option>Sócio(a) / CEO / Proprietário(a)</option>
           <option>Diretor(a) de Vendas</option>
           <option>Diretor(a) de Marketing"</option>
@@ -100,11 +100,17 @@
       </label>
       <label class="label-input">
         Crie uma senha
-        <input class="form-control" type="password" />
+        <div  style="display: flex; align-items: center;">
+          <input id="user-password"  type="password" class="form-control" style="width: 100%" />
+          <img id="create-password" src="./images/eye-closed.svg" alt="open eye icon" style="position:absolute; right: 20px;">
+        </div>
       </label>
       <label class="label-input">
         Confirme sua senha
-        <input class="form-control" type="password" />
+        <div style="display: flex; align-items: center;">
+          <input id="user-confirm-password" type="password" class="form-control" style="width: 100%" />
+          <img id="confirm-password" src="./images/eye-closed.svg" alt="open eye icon" style="position:absolute; right: 20px;">
+        </div>
       </label>
       <span class="label-input">Qual o site da sua empresa?</span>
       <label class="radio-input">
@@ -112,8 +118,9 @@
         Meu site é
       </label>
       <input
+        id="site-address"
         class="form-control"
-        type="number"
+        type="url"
         placeholder="Insira o endereço do seu site"
       />
       <label class="radio-input">
@@ -121,15 +128,35 @@
         Ainda não tenho site
       </label>
       <ul class="footer-form-text">
-        <li>Ao criar minha conta estou de acordo com os <a href="*">termos de uso</a> do software e <a href="*">política de privacidade</a>.</li>
+        <li>Ao criar minha conta estou de acordo com os <a href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/">termos de uso</a> do software e <a href="https://legal.rdstation.com/pt/privacy-policy/">política de privacidade</a>.</li>
         <li>Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.</li>
         <li>*Você pode alterar suas permissões de comunicação a qualquer tempo.</li>
       </ul>
       <div style="margin: 18px 0">
-        <button class="submit-form-btn">CRIAR MINHA CONTA</button>
+        <button type="submit" class="submit-form-btn">CRIAR MINHA CONTA</button>
         <div class="shadow-submit"></div>
       </div>
     </form>
   </main>
+  <section class="results">
+    <div class="girl-with-pen">
+      <img
+        src="./images/img-paula.png"
+        style="clip-path: polygon(0 1%, 75% 0, 100% 25%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);"
+      >
+    </div>
+    <div class="results-info" style="padding-top: 240px;">
+      <h3>Resultados previsíveis e mais clientes para sua empresa</h3>
+      <p>Torne sua atuação no Marketing Digital mais eficaz</p>
+      <ul>
+        <li><b>Ferramentas intuitivas</b> e com modelos prontos, vídeos explicativos e passo a passo guiado</li>
+        <li><b>Implementação com especialistas</b> focada em planejamento e prática (nos planos Marketing Pro e Enterprise)</li>
+        <li><b>Time de especialistas em Sucesso do Cliente</b> para apoiar na otimização da estratégia em cada fase da sua jornada (nos planos Marketing Pro e Enterprise)</li>
+        <li><b>Suporte técnico</b> em português, espanhul e inglês para tirar dúvidas, <b>com 97% de satisfação</b> entre nossos clientes</li>
+        <li><b>Muito conteúdo educativo</b>, eventos, cursos da <a href="*" style="color: #19C1CE;">RD University</a> e comunidades para você continuar evoluindo</li>
+      </ul>
+    </div>
+  </section>
+  <script src="./index.js"></script>
 </body>
 </html>
