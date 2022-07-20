@@ -262,10 +262,9 @@ section.results {
 }
 
 .results-info {
-  position: absolute;
+  /* position: absolute; */
   top: 102vh;
-  right: 6vw;
-  width: 30vw;
+  width: 30%;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: 400;
@@ -295,9 +294,14 @@ section.results h3 {
 
 .girl-with-pen {
   padding-top: 240px;
-  padding-left: 100px;
-  width: 1065px;
-  height: 600px;
+  margin-left: 7.6vw;
+  width: 56%;
+  height: 70%;
+}
+
+.girl-with-pen img {
+  width: 80%;
+  height: 100%;
 }
 
 /* products section */
@@ -349,4 +353,115 @@ section.results h3 {
   width: 32px;
   height: 24px;
   margin: auto;
+}
+
+/* green banner */
+
+.green-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 7.6vw;
+  width: 86vw;
+  height: 30vh;
+  background-image: url('./images/green-banner.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.create-account {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-account h3 {
+  width: 65%;
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.create-account p {
+  width: 85%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  margin-top: 15px;
+  width: 40%;
+}
+
+.btn-container div {
+  margin-left: 3.5%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* demonstration section */
+
+.grey-banner {
+  margin-top: 150px;
+  width: 94vw;
+  height: 280px;
+  background: #F1F3F5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 110%;
+}
+
+.grey-banner .text-banner {
+  margin-left: 7.6vw;
+  width: 30%
+}
+
+.thumb-img img{
+  margin-right: 7.6vw;
+  width: 80%;
+}
+
+.grey-banner button {
+  margin-top: 25px;
+  border: 2px solid black;
+  background-color: transparent;
+  height: 40px;
+  width: 80%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.grey-banner .shadow-border {
+  margin-left: 11px;
+  width: 75%;
 }
