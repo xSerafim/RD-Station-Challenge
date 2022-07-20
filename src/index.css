@@ -261,13 +261,30 @@ section.results {
     linear-gradient(to right top, #FFFFFF 450px, #F1F3F5 0);
 }
 
-/* .results-info {
-  position: absolute;
-  left: 65vw;
-  width: 350px;
-} */
+.results-info {
+  /* position: absolute; */
+  top: 102vh;
+  width: 30%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.results-info ul {
+  list-style-image: url('./images/check.svg');
+  font-size: 16px;
+  line-height: 150%;
+  color: #212429;
+}
+
+.results-info p {
+  margin-left: -22px;
+}
 
 section.results h3 {
+  margin-left: -22px;
   font-family: Darker Grotesque;
   font-style: normal;
   font-weight: 900;
@@ -277,7 +294,286 @@ section.results h3 {
 
 .girl-with-pen {
   padding-top: 240px;
-  padding-left: 100px;
-  width: 1065px;
-  height: 600px;
+  margin-left: 7.6vw;
+  width: 56%;
+  height: 70%;
+}
+
+.girl-with-pen img {
+  width: 80%;
+  height: 100%;
+}
+
+/* products section */
+
+.products-container {
+  width: 90vw;
+  margin-left: 6vw;
+  margin-top: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+}
+
+.grid-item {
+  box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+  height: 393px;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 2px;
+  margin: 15px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.grid-item h4 {
+  font-family: Darker Grotesque;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+  margin: 20px 0;
+}
+
+.product-img-container {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  background: #F1F3F5;
+  border-radius: 34px;
+  align-content: center
+}
+
+.product-img-container img {
+  width: 32px;
+  height: 24px;
+  margin: auto;
+}
+
+/* green banner */
+
+.green-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-left: 7.6vw;
+  width: 86vw;
+  height: 30vh;
+  background-image: url('./images/green-banner.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.create-account {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-account h3 {
+  width: 65%;
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.create-account p {
+  width: 85%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  margin-top: 15px;
+  width: 40%;
+}
+
+.btn-container div {
+  margin-left: 3.5%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* demonstration section */
+
+.grey-banner {
+  margin-top: 150px;
+  width: 94vw;
+  height: 280px;
+  background: #F1F3F5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 110%;
+}
+
+.grey-banner .text-banner {
+  margin-left: 7.6vw;
+  width: 30%
+}
+
+.thumb-img img{
+  margin-right: 7.6vw;
+  width: 80%;
+}
+
+.grey-banner button {
+  margin-top: 25px;
+  border: 2px solid black;
+  background-color: transparent;
+  height: 40px;
+  width: 80%;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.grey-banner .shadow-border {
+  margin-left: 3%;
+  width: 74.5%;
+}
+
+/* Icon grid */
+
+.marketing-tools {
+  margin-left: 7.6vw;
+  margin-top: 150px;
+  width: 92.5vw;
+  display: flex;
+}
+
+.marketing-banner {
+  width: 43%;
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 15px;
+}
+
+.marketing-banner p {
+  margin-top: 15px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.marketing-banner button {
+  margin-top: 35px;
+  dislpay: flex;
+  background-color: #19C1CE;
+  width: 45%;
+  height: 35px;
+  border: none;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.marketing-banner .shadow-border {
+  margin-left: 1.5%;
+  width: 42%;
+}
+
+
+.icon-grid-container {
+  display: grid;
+  width: 50%;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+
+.icon-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon-grid img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 150px;
+  width: 100vw;
+  height: 181px;
+  background: #19C1CE;
+}
+
+.footer-logo img {
+  width: 174px;
+  height: 32px;
+}
+
+.main-footer {
+  margin-left: 7.6vw;
+  height: 50%;
+  width: 92.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50%;
+}
+
+.social-logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 43.5%;
+}
+
+.social-logo a {
+  margin-right: 10px;
+}
+
+.copyright {
+  width: 94vw;
+  margin-top: 32px;
+  display: flex;
+  justify-content: end;
 }
