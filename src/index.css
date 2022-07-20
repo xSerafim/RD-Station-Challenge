@@ -310,7 +310,7 @@ section.results h3 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33% 33% 33%;
   padding: 10px;
 }
 
@@ -348,6 +348,5 @@ section.results h3 {
 .product-img-container img {
   width: 32px;
   height: 24px;
-  padding-left: 16px;
-  margin-top: 19px;
+  margin: auto;
 }
