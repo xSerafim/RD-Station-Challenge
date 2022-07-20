@@ -261,13 +261,31 @@ section.results {
     linear-gradient(to right top, #FFFFFF 450px, #F1F3F5 0);
 }
 
-/* .results-info {
+.results-info {
   position: absolute;
-  left: 65vw;
-  width: 350px;
-} */
+  top: 102vh;
+  right: 6vw;
+  width: 30vw;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.results-info ul {
+  list-style-image: url('./images/check.svg');
+  font-size: 16px;
+  line-height: 150%;
+  color: #212429;
+}
+
+.results-info p {
+  margin-left: -22px;
+}
 
 section.results h3 {
+  margin-left: -22px;
   font-family: Darker Grotesque;
   font-style: normal;
   font-weight: 900;
@@ -280,4 +298,56 @@ section.results h3 {
   padding-left: 100px;
   width: 1065px;
   height: 600px;
+}
+
+/* products section */
+
+.products-container {
+  width: 90vw;
+  margin-left: 6vw;
+  margin-top: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  box-shadow: 0px 4px 12px rgba(33, 36, 41, 0.14);
+  height: 393px;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 2px;
+  margin: 15px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.grid-item h4 {
+  font-family: Darker Grotesque;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+  margin: 20px 0;
+}
+
+.product-img-container {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  background: #F1F3F5;
+  border-radius: 34px;
+  align-content: center
+}
+
+.product-img-container img {
+  width: 32px;
+  height: 24px;
+  padding-left: 16px;
+  margin-top: 19px;
 }
