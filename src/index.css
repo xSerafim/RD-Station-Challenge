@@ -462,6 +462,118 @@ button {
 }
 
 .grey-banner .shadow-border {
-  margin-left: 11px;
-  width: 75%;
+  margin-left: 3%;
+  width: 74.5%;
+}
+
+/* Icon grid */
+
+.marketing-tools {
+  margin-left: 7.6vw;
+  margin-top: 150px;
+  width: 92.5vw;
+  display: flex;
+}
+
+.marketing-banner {
+  width: 43%;
+  font-family: Darker Grotesque;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 15px;
+}
+
+.marketing-banner p {
+  margin-top: 15px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.marketing-banner button {
+  margin-top: 35px;
+  dislpay: flex;
+  background-color: #19C1CE;
+  width: 45%;
+  height: 35px;
+  border: none;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.marketing-banner .shadow-border {
+  margin-left: 1.5%;
+  width: 42%;
+}
+
+
+.icon-grid-container {
+  display: grid;
+  width: 50%;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+
+.icon-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.icon-grid img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 150px;
+  width: 100vw;
+  height: 181px;
+  background: #19C1CE;
+}
+
+.footer-logo img {
+  width: 174px;
+  height: 32px;
+}
+
+.main-footer {
+  margin-left: 7.6vw;
+  height: 50%;
+  width: 92.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50%;
+}
+
+.social-logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 43.5%;
+}
+
+.social-logo a {
+  margin-right: 10px;
+}
+
+.copyright {
+  width: 94vw;
+  margin-top: 32px;
+  display: flex;
+  justify-content: end;
 }
