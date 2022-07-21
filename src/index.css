@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
 }
+
+.container-mobile {
+  display: none;
+}
+
+.social-mobile {
+  display: none; 
+}
 /* Header */
 header nav {
   position: absolute;
@@ -19,6 +27,10 @@ header nav {
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
+}
+
+.burguer-menu {
+  display: none;
 }
 
 .nav-links {
@@ -293,15 +305,10 @@ section.results h3 {
 }
 
 .girl-with-pen {
-  padding-top: 240px;
+  padding-top: 260px;
   margin-left: 7.6vw;
   width: 56%;
   height: 70%;
-}
-
-.girl-with-pen img {
-  width: 80%;
-  height: 100%;
 }
 
 /* products section */
@@ -499,7 +506,7 @@ button {
   dislpay: flex;
   background-color: #19C1CE;
   width: 45%;
-  height: 35px;
+  height: 45px;
   border: none;
   font-family: Nunito Sans;
   font-style: normal;
@@ -577,3 +584,369 @@ footer {
   display: flex;
   justify-content: end;
 }
+
+@media screen and (max-width: 1200px) {
+  .girl-with-pen img {
+    width: 80%;
+    height: 45vw;
+  }
+
+  .grid-item {
+    height: 500px;
+  }
+
+  .marketing-banner button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .grid-container {
+    margin-top: 250px;
+  }
+
+  .grid-item {
+    height: 600px;
+  }
+
+  .grid-item h4 {
+    font-size: 24px;
+  }
+
+  .create-account h3 {
+    font-size: 32px;
+  }
+
+  .marketing-banner button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-mobile {
+    display: block;
+  }
+  
+  .social-mobile {
+    display: block; 
+  }
+
+  .burguer-menu {
+    display:block;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+  }
+
+  .burguer-menu button {
+    border: none;
+    background: transparent;
+  }
+
+  .burguer-menu button:active {
+    background: black;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero-text {
+    width: 80%;
+  }
+
+  .signup-form {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 20px auto;
+    width: 90vw;
+  }
+
+  .signup-form .shadow-submit {
+    margin-left: 3.7vw;
+  }
+
+  .info-text {
+    margin: auto;
+    width: 80vw;
+  }
+
+  .results {
+    position: relative;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100% !important;
+  }
+
+  .results-info {
+    padding: 0 !important;
+    width: 85vw;
+    margin: auto;
+  }
+
+  .girl-with-pen {
+    margin: auto;
+    padding: 0;
+    order: 2;
+    width: 90vw;
+    height: 150vw;
+  }
+
+  .girl-with-pen img {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .products-container {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 90vw;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+
+  .grid-item {
+    height: 300px;
+  }
+
+  .grid-item h4 {
+    font-size: 24px;
+  }
+
+  .create-account h3 {
+    font-size: 32px;
+  }
+
+  .marketing-banner button {
+    font-size: 12px;
+  }
+
+  .green-banner {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 84vw;
+    height: 450px;
+  }
+
+  .green-banner h3 {
+    width: 100%;
+  }
+
+  .btn-container {
+    width: 50vw;
+  }
+
+  .grey-banner {
+    flex-direction: column;
+    width: 100vw;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-top: 70px;
+  }
+
+  .grey-banner .text-banner {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grey-banner .text-banner h3 {
+    text-align: center;
+  }
+
+  .grey-banner .text-banner .shadow-border {
+    margin: 0;
+  }
+
+  .thumb-img {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .thumb-img img {
+    margin: auto;
+  }
+
+  .marketing-tools {
+    padding: 0;
+    margin: auto;
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .marketing-tools .desktop-btn {
+    visibility: hidden;
+  }
+
+  .marketing-tools .mobile-btn {
+    width: 40vw;
+    margin-top: 35px;
+    dislpay: flex;
+    background-color: #19C1CE;
+    height: 45px;
+    border: none;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .marketing-tools .shadow-border {
+    visibility: hidden;
+  }
+
+  .container-mobile .shadow-mobile {
+    height: 4px;
+    margin-left: 3.9%;
+    width: 92.8%;
+    background-color: black;
+    transform: perspective(10px) rotateX(-20deg);
+  }
+
+  .marketing-tools .marketing-banner {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .icon-grid-container {
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+    margin: auto;
+    grid-template-columns: auto auto;
+  }
+
+  .icon-grid {
+    margin: auto;
+    width: 130px;
+    height: 90px;
+  }
+
+  .main-footer {
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+  }
+
+  .footer-logo {
+    margin: auto;
+  }
+
+  .footer-logo img {
+    margin-left: 26%;
+  }
+
+  .social-logo {
+    display: none;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  .copyright {
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* header {
+    display: none;
+  } */
+
+  .grid-container {
+    margin-top: 250px;
+  }
+
+  .grid-item {
+    height: 400px;
+  }
+
+  .grid-item h4 {
+    font-size: 24px;
+  }
+
+  .create-account h3 {
+    font-size: 32px;
+  }
+
+  .marketing-banner button {
+    font-size: 12px;
+  }
+}
+
+/* -------- */
+
+
+/* @media (max-width: 768px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .burguer-menu button ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .burguer-menu button ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+} */

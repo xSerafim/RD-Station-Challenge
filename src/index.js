@@ -44,13 +44,34 @@ confirmPasswordIcon.addEventListener('click', (e) => {
   }
 });
 
+function validatePassword() {
+  const validations = [
+    userPassword.value.length > 5,
+    userPassword.value.length < 11,
+    /\d/.test(userPassword.value),
+    /[A-Z]/.test(userPassword.value),
+    userPassword.value === userConfirmPassword.value,
+  ];
+
+  if (validations.some((a) => a === false)) {
+    return false;
+  }
+
+  return true;
+}
+
 submitBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  console.log(userName.value || false);
-  console.log(mailformat.test(userEmail.value) ? userEmail.value : false);
-  console.log(userPhone.value.replace(/[\s()+-]/g, '').length >= 10);
-  console.log(userRole.value ? userRole.value : false);
-  console.log(userPassword.value === userConfirmPassword.value);
-  console.log([...userSite].find((radioBtn) => radioBtn.checked).parentNode.innerText);
-  console.log(urlFormat.test(userSiteAddress.value) ? userSiteAddress.value : false);
+  const validations = [
+    userName.value || false,
+    mailformat.test(userEmail.value) ? userEmail.value : false,
+    userPhone.value.replace(/[\s()+-]/g, '').length >= 10,
+    userRole.value ? userRole.value : false,
+    validatePassword(),
+    [...userSite].find((radioBtn) => radioBtn.checked).parentNode.innerText !== 'Meu site é'
+    && urlFormat.test(userSiteAddress.value),
+  ];
+
+  if (validations.some((a) => a === false)) {
+    e.preventDefault();
+  }
 });
