@@ -3,9 +3,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Darker Grotesque" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
   <title>RD STATION</title>
 </head>
 <body>
@@ -14,8 +14,11 @@
       <div style="margin-left: 6vw; width: 20%;">
         <img src="./images/logo.svg" alt="Logo RD Station" />
       </div>
+      <div class="burguer-menu">
+        <button><img src="./images/menu-bruguer.svg"></button>
+      </div>
       <div style="width: 80%;">
-        <ul class="nav-links">
+        <ul class="nav-links menu">
           <li>Menu 1</li>
           <li>Menu 2</li>
           <li>Menu 3</li>
@@ -46,17 +49,6 @@
         <br />
         <p class="hero-paragraph">
           O RD Station Marketing é um software para sua empresa fazer campanhas melhores, nutrir Leads, gerar oportunidades comerciais qualificadas e alcançar mais resultados.
-        </p>
-      </div>
-    </section>
-    <section class="together-info">
-      <div class="info-text">
-        <h3 class="info-title">Estaremos juntos desde o primeiro passo!</h3>
-        <p class="info-paragraph">
-          Se você ainda não sabe como extrair o máximo das ações digitais, não tem problema. O <b>RD Station Marketing</b> é mais que uma ferramenta, nos importamos com os seus resultados.
-          <br />
-          <br />
-          <b>Estaremos com você do planejamento até a prática!</b>
         </p>
       </div>
     </section>
@@ -128,7 +120,7 @@
         Ainda não tenho site
       </label>
       <ul class="footer-form-text">
-        <li>Ao criar minha conta estou de acordo com os <a href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/">termos de uso</a> do software e <a href="https://legal.rdstation.com/pt/privacy-policy/">política de privacidade</a>.</li>
+        <li>Ao criar minha conta estou de acordo com os <a target="_blank" href="https://legal.rdstation.com/pt-BR/rdstation-services-agreement/">termos de uso</a> do software e <a target="_blank" href="https://legal.rdstation.com/pt/privacy-policy/">política de privacidade</a>.</li>
         <li>Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.</li>
         <li>*Você pode alterar suas permissões de comunicação a qualquer tempo.</li>
       </ul>
@@ -137,6 +129,17 @@
         <div class="shadow-submit"></div>
       </div>
     </form>
+    <section class="together-info">
+      <div class="info-text">
+        <h3 class="info-title">Estaremos juntos desde o primeiro passo!</h3>
+        <p class="info-paragraph">
+          Se você ainda não sabe como extrair o máximo das ações digitais, não tem problema. O <b>RD Station Marketing</b> é mais que uma ferramenta, nos importamos com os seus resultados.
+          <br />
+          <br />
+          <b>Estaremos com você do planejamento até a prática!</b>
+        </p>
+      </div>
+    </section>
   </main>
   <section class="results">
     <div class="girl-with-pen">
@@ -160,7 +163,7 @@
         <br />
         <li><b>Suporte técnico</b> em português, espanhul e inglês para tirar dúvidas, <b>com 97% de satisfação</b> entre nossos clientes</li>
         <br />
-        <li><b>Muito conteúdo educativo</b>, eventos, cursos da <a href="*" style="color: #19C1CE;">RD University</a> e comunidades para você continuar evoluindo</li>
+        <li><b>Muito conteúdo educativo</b>, eventos, cursos da <a target="_blank" href="https://rduniversity.com.br/" style="color: #19C1CE;">RD University</a> e comunidades para você continuar evoluindo</li>
       </ul>
     </div>
   </section>
@@ -216,7 +219,7 @@
       <br />
       <p>Combinamos nossos produtos de Marketing e Vendas com pessoas que se importam com seus resultados e um ecossistema que apoia o seu negócio do planejamento à prática.</p>
       <div class="btn-container">
-        <button class="submit-form-btn" type="button">CRIAR CONTA GRATUITA</button>
+        <button class="submit-form-btn" type="button"><a style="color: black; text-decoration: none;" href="https://app.rdstation.com.br/signup" target="_blank">CRIAR CONTA GRATUITA</a></button>
         <div class="shadow-submit"></div>
       </div>
     </div>
@@ -224,11 +227,11 @@
   <div class="grey-banner">
     <div class="text-banner">
       <h3>Entenda melhor como o RD Station Marketing funciona na prática</h3>
-      <button type="button">assista a demonstração</button>
+      <button type="button"><a style="color: black; text-decoration: none;" href="https://www.youtube.com/watch?v=lGCesaaLi4s" target="_blank">assista a demonstração</a></button>
       <div class="shadow-border"></div>
     </div>
     <div class="thumb-img">
-      <img src="./images/thumbnail.svg">
+      <img src="./images/thumbnail.svg" alt="Mulher com notebook">
     </div>
   </div>
   <div class="marketing-tools">
@@ -236,7 +239,7 @@
       <h3>Torne sua operação de Marketing ainda mais poderosa</h3>
       <br />
       <p>O RD Station Marketing se conecta as principais ferramentas nacionais e internacionais</p>
-      <button type="button">CRIAR CONTA GRATUITA</button>
+      <button class="desktop-btn" type="button"><a style="color: black; text-decoration: none;" href="https://app.rdstation.com.br/signup" target="_blank">CRIAR CONTA GRATUITA</a></button>
       <div class="shadow-border"></div>
     </div>
     <div class="icon-grid-container">
@@ -281,22 +284,33 @@
         <span>Zapier</span>
       </div>
     </div>
+    <div class="container-mobile">
+      <button class="mobile-btn" type="button"><a style="color: black; text-decoration: none;" href="https://app.rdstation.com.br/signup" target="_blank">CRIAR CONTA GRATUITA</a></button>
+      <div class="shadow-mobile"></div>
+    </div>
   </div>
   <footer>
     <div>
       <div class="main-footer">
         <div class="footer-logo"><img src="./images/bw.svg" alt="black white logo" /></div>
         <div class="social-logo">
-          <a><img src="./images/social-twitter.svg" alt="twitter logo" /></a>
-          <a><img src="./images/social-fb.svg" alt="facebook logo" /></a>
-          <a><img src="./images/social-lk.svg" alt="linkedin logo" /></a>
-          <a><img src="./images/social-insta.svg" alt="instagram logo" /></a>
-          <a><img src="./images/social-youtube.svg" alt="youtube logo" /></a>
+          <a href="https://twitter.com/rd_station" target="_blank"><img src="./images/social-twitter.svg" alt="twitter logo" /></a>
+          <a href="https://www.facebook.com/ResultadosDigitais/" target="_blank"><img src="./images/social-fb.svg" alt="facebook logo" /></a>
+          <a href="https://www.linkedin.com/company/resultadosdigitais" target="_blank"><img src="./images/social-lk.svg" alt="linkedin logo" /></a>
+          <a href="https://www.instagram.com/resdigitais/" target="_blank"><img src="./images/social-insta.svg" alt="instagram logo" /></a>
+          <a href="https://www.youtube.com/channel/UC5lPKvmw6-DFya_qreisENQ" target="_blank"><img src="./images/social-youtube.svg" alt="youtube logo" /></a>
         </div>
       </div>
       <hr style="width: 86.5vw; margin-left: 7.6vw; background-color: white; border-top: none" />
       <div class="copyright">
-        <span>© 2021 RD Station. <a href="*">Política de Privacidade</a>.</span>
+        <div class="social-mobile">
+          <a href="https://twitter.com/rd_station" target="_blank"><img src="./images/social-twitter.svg" alt="twitter logo" /></a>
+          <a href="https://www.facebook.com/ResultadosDigitais/" target="_blank"><img src="./images/social-fb.svg" alt="facebook logo" /></a>
+          <a href="https://www.linkedin.com/company/resultadosdigitais" target="_blank"><img src="./images/social-lk.svg" alt="linkedin logo" /></a>
+          <a href="https://www.instagram.com/resdigitais/" target="_blank"><img src="./images/social-insta.svg" alt="instagram logo" /></a>
+          <a href="https://www.youtube.com/channel/UC5lPKvmw6-DFya_qreisENQ" target="_blank"><img src="./images/social-youtube.svg" alt="youtube logo" /></a>
+        </div>
+        <span>© 2021 RD Station. <a style="color: black;" href="https://legal.rdstation.com/pt/privacy-policy/" target="_blank">Política de Privacidade</a>.</span>
       </div>
     </div>
   </footer>
